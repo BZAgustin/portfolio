@@ -1,0 +1,70 @@
+@import 'variables';
+@import 'mixins';
+
+.about-container {
+  h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    border: 3px solid $white-ghost;
+    filter: drop-shadow(0px 0px 300px rgba(255,255,255,0.03))
+  }
+
+  .accent {
+    color: $accent;
+  }
+
+  .about {
+    @include gradient-background($vertical, $transparent 0%, rgba(0,0,0,0.9) 15%, rgba(0,0,0,0.97) 85%, $transparent 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    padding-top: 10rem;
+    padding-bottom: 14rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  .about-content {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .image-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    flex: 4;
+    font-size: 2.5rem;
+  }
+
+  #top {
+    font-size: 3.3rem;
+  }
+
+  #top, #bottom {
+    position: relative;
+    right: 4rem;
+  }
+
+  #mid {
+    font-size: 3rem;
+    position: relative;
+    left: 2rem;
+  }
+}
