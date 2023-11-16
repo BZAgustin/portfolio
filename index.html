@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="public/stylesheets/style.css">
+  <script src="dist/main.js" defer></script>
   <title>Portfolio</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
       <nav>
         <ul>
           <li><a href="">About</a></li>
+          <li><a href="">Skills</a></li>
           <li><a href="">Projects</a></li>
           <li><a href="">Demos</a></li>
           <li><a href="">Contact</a></li>
@@ -22,13 +24,13 @@
     <main>
       <div class="hero-main">
         <div class="hero-container">
-          <div class="hero-top-left">
+          <div class="hero-square" id="top-left">
             <h1>AGUSTIN</h1>
             <h1>BUSTOS</h1>
             <h1>ZANELLI</h1>
           </div>
   
-          <div class="hero-bottom-right">
+          <div class="hero-square" id="bottom-right">
             <h2>FRONT</h2>
             <h2>END</h2>
             <h2>WEB</h2>
@@ -37,20 +39,95 @@
         </div>
       </div>
 
-      <div class="separator"></div>
-
       <div class="about-container">
-        <h1>ABOUT ME</h1>
-        <p>I'm a <span>self-taught</span>, <span>freelance</span> developer from Argentina.</p>
-        <p>While my current focus is <span>front-end</span> development, I have a solid base of knowledge on <span>back-end</span> systems</p>
+        <div class="about">
+          <h1>ABOUT ME</h1>
+          <div class="underline"></div>
+          <div class="about-content">
+            <div class="image-col">
+              <img src="public/images/me.png" alt="My Picture">
+            </div>  
+
+            <div class="text-content">
+              <p id="top">I'm a <span class="accent">self-taught</span>, <span class="accent">freelance</span> developer from Argentina.</p>
+              <p id="mid">I started my journey in <span class="accent">2020</span>.</p>
+              <p id="bottom">While my current focus is <span class="accent">front-end</span> development, I have a solid base of knowledge and experience on <span class="accent">back-end</span> systems.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="separator"></div>
-
-
       <div class="skills-container">
-        <h1>MY SKILLS</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis deleniti consequuntur aliquid a minus explicabo ex assumenda voluptatum placeat nemo! Eaque voluptate, obcaecati error qui eum magni totam saepe explicabo!</p>
+        <div class="skills-header">
+          <h1>MY SKILLS</h1>
+        </div>
+        <div class="card-container">
+          <div class="card" id="front-end">
+            <h1>FRONT END</h1>
+            <div class="underline"></div>
+            <div class="img-container">
+              <div class="image">
+                <img src="/public/images/logos/htmlLogo.png" alt="HTML">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/cssLogo.png" alt="CSS">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/bootstrapLogo.png" alt="Bootstrap">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/sassLogo.png" alt="Sass">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/javascriptLogo.png" alt="JavaScript">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/typescriptLogo.png" alt="TypeScript">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/reactLogo.png" alt="React">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/tailwindLogo.png" alt="Tailwind">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="back-end">
+            <h1>BACK END</h1>
+            <div class="underline"></div>
+            <div class="img-container">
+              <div class="image">
+                <img src="/public/images/logos/nodeJsLogo.png" alt="TypeScript">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/mysqlLogo.png" alt="TypeScript">
+              </div>
+              <div class="image" id="mongoDb">
+                <img src="/public/images/logos/mongoDbLogo.png" alt="TypeScript">
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="tools">
+            <h1>TOOLS</h1>
+            <div class="underline"></div>
+            <div class="img-container">
+              <div class="image">
+                <img src="/public/images/logos/gitLogo.png" alt="TypeScript">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/viteLogo.png" alt="TypeScript">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/webpackLogo.png" alt="TypeScript">
+              </div>
+              <div class="image">
+                <img src="/public/images/logos/figmaLogo.png" alt="TypeScript">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   
