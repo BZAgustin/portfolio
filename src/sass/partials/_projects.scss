@@ -1,0 +1,58 @@
+@import 'mixins';
+
+.projects-container {
+  @include flex-column-center;
+  padding: 3rem 3rem;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .underline {
+    margin-bottom: 2rem;
+  }
+}
+
+.project-container {
+  background: rgb(4,4,4);
+  background: linear-gradient(135deg, rgba(4,4,4,1) 0%, rgb(10, 10, 10) 100%);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.project-outline {
+  background: rgb(46,46,46);
+  background: linear-gradient(0deg, rgba(46,46,46,0.5) 25%, rgb(241, 241, 241) 100%);
+  padding: 1px;
+  border-radius: 20px;
+  filter: drop-shadow(2px 2px 5px black)
+}
+
+.project {
+  #vinyl-vortex {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80rem;
+    z-index: 1;
+  }
+}
+
+.preview-group {
+  position: relative;
+}
+
+.project-overlay {
+  position: relative;
+  width: 80rem;
+  height: 38rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.98) 25%, rgba(0,0,0,0) 50%);
+  z-index: 2;
+}
+
+.badge-section {
+  img {
+    height: 1.6rem;
+  }
+}
