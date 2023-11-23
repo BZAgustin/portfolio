@@ -1,10 +1,11 @@
-@use 'partials/header';
-@use 'partials/hero';
+@use 'partials/mixins';
+@use 'partials/variables';
 
+@import 'partials/header';
+@import 'partials/hero';
 @import 'partials/about';
 @import 'partials/skills';
-@import 'partials/mixins';
-@import 'partials/variables';
+@import 'partials/projects';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
