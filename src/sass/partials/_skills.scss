@@ -1,9 +1,8 @@
-.skills-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@import 'mixins';
 
+.skills-container {
+  @include flex-column-center;
+  
   h1 {
     text-align: center;
     font-size: 6rem;
@@ -85,7 +84,7 @@
   .card::before {
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 225, 255, 0.05),
+      rgba(255, 225, 255, 0.08),
       transparent 40%
     );
     border-radius: inherit;
