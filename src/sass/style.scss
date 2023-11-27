@@ -20,6 +20,10 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   background: rgba(2,0,6,1);
   @include gradient-background($horizontal, $background-gradient);
@@ -32,15 +36,6 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.separator {
-  background-image: linear-gradient($horizontal, $transparent 10%, white 50%, $transparent 90%);
-  height: 2px;
-  width: 50%;
-  margin: 4rem 0;
-  filter: drop-shadow(0px 0px 10px white);
-  align-self: center;
 }
 
 .underline {
