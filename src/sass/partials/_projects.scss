@@ -2,22 +2,22 @@
 
 .projects-container {
   @include flex-column-center;
-  padding: 3rem 3rem;
-
-  h1 {
-    font-size: 3rem;
-  }
-
-  .underline {
-    margin-bottom: 2rem;
-  }
+  padding: 3rem 12rem;
 }
 
-.project-container {
-  background: rgb(4,4,4);
-  background: linear-gradient(135deg, rgba(4,4,4,1) 0%, rgb(10, 10, 10) 100%);
-  padding: 2rem;
-  border-radius: 20px;
+.demos-container {
+  @include flex-column-center;
+  padding: 0 4rem;
+}
+
+.underline {
+  margin-bottom: 2rem;
+}
+
+.projects-header {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 .project-outline {
@@ -28,31 +28,109 @@
   filter: drop-shadow(2px 2px 5px black)
 }
 
-.project {
-  #vinyl-vortex {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80rem;
-    z-index: 1;
+.project-container {
+  background: rgb(4,4,4);
+  background: linear-gradient(135deg, rgba(4,4,4,1) 0%, rgb(15, 15, 15) 100%);
+  padding: 1.5rem;
+  border-radius: 20px;
+}
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  transition: 300ms ease-in-out;
+  filter: saturate(60%) brightness(90%) blur(1px);
+}
+
+.project-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.98) 25%, rgba(0,0,0,0) 50%);
+  z-index: 2;
+
+  h1 {
+    font-size: 2.5rem;
+    transition: 200ms ease-in-out;
   }
+}
+
+.project:hover .project-overlay h1, .preview-group:hover .project-overlay h1 {
+  color: $accent;
+  font-size: 3.5rem;
+}
+
+.project:hover .preview-image, .preview-group:hover .preview-image {
+  filter: saturate(100%) brightness(100%);
+}
+
+.lower-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+
+  .link {
+    display: flex;
+    font-size: 1.3rem;
+  }
+}
+
+button {
+  border: none;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  background-color: $accent;
+  border-radius: 5px;
+
+  img {
+    height: 1rem;
+    width: auto;
+  }
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .preview-group {
   position: relative;
 }
 
-.project-overlay {
-  position: relative;
-  width: 80rem;
-  height: 38rem;
+
+.demo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
   background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,0.98) 25%, rgba(0,0,0,0) 50%);
   z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 
 .badge-section {
   img {
-    height: 1.6rem;
+    height: 1.5rem;
   }
+}
+
+.demos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
