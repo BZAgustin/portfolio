@@ -3,21 +3,17 @@
 .projects-container {
   @include flex-column-center;
   padding: 3rem 12rem;
+  margin-top: 4rem;
 }
 
 .demos-container {
   @include flex-column-center;
   padding: 0 4rem;
+  margin-top: 4rem;
 }
 
 .underline {
   margin-bottom: 2rem;
-}
-
-.projects-header {
-  h1 {
-    font-size: 4rem;
-  }
 }
 
 .project-outline {
@@ -39,8 +35,7 @@
   width: 100%;
   height: auto;
   z-index: 1;
-  transition: 300ms ease-in-out;
-  filter: saturate(60%) brightness(90%) blur(1px);
+  transition: 250ms ease-in-out;
 }
 
 .project-overlay {
@@ -58,7 +53,7 @@
 
   h1 {
     font-size: 2.5rem;
-    transition: 200ms ease-in-out;
+    transition: 250ms ease-in-out;
   }
 }
 
@@ -68,7 +63,8 @@
 }
 
 .project:hover .preview-image, .preview-group:hover .preview-image {
-  filter: saturate(100%) brightness(100%);
+  filter: saturate(60%) brightness(50%) blur(1px);
+
 }
 
 .lower-group {
