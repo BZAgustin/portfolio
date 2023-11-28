@@ -6,6 +6,7 @@
 @import 'partials/about';
 @import 'partials/skills';
 @import 'partials/projects';
+@import 'partials/contact';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 
@@ -36,6 +37,11 @@ a {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.section-header {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .underline {
