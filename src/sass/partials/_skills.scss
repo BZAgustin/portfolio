@@ -2,11 +2,6 @@
 
 .skills-container {
   @include flex-column-center;
-  
-  h1 {
-    text-align: center;
-    font-size: 6rem;
-  }
 
   .underline {
     align-self: center;
