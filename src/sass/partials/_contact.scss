@@ -2,5 +2,89 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 4rem;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 6rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
 }
+
+.contact-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+
+  img {
+    width: 96px;
+    height: 96px;
+    transition: 250ms;
+  }
+}
+
+.abstract-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.abstract-card {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+.abstract-card:hover::before {
+  opacity: 1;
+}
+
+.abstract-card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 225, 255, 0.08),
+    transparent 40%
+  );
+  border-radius: inherit;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 500ms;
+  z-index: 2;
+}
+
+#gmail:hover, #linked-in:hover {
+  filter: saturate(65%) drop-shadow(0px 0px 15px rgba(255,255,255,0.4));
+}
+
+#github {
+  border-radius: 100%;
+  padding: 3px;
+  transition: 250ms;
+}
+
+#github:hover {
+  background-color: white;
+  filter: drop-shadow(0px 0px 15px rgba(255,255,255,0.4));
+}
+
+#resume:hover {
+  filter: drop-shadow(0px 0px 15px rgba(255,255,255,0.4));
+
+}
+
