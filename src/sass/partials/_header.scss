@@ -1,5 +1,5 @@
 header {
-  padding: 2rem;
+  padding: 1.5rem;
 
   nav {
     display: flex;
@@ -16,5 +16,12 @@ header {
       color: white;
       text-decoration: none;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    font-size: 0.7rem;
+    gap: 5vw;
   }
 }
