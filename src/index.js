@@ -1,5 +1,6 @@
 const heroSquares = document.querySelectorAll('.hero-square');
 const skillsSection = document.querySelectorAll('.card');
+const contactSection = document.querySelector('.abstract-card');
 
 const handleOnMouseMove = e => {
   let timeoutId;
@@ -18,10 +19,13 @@ const handleOnMouseMove = e => {
   }, 25);
 }
 
+for(square of heroSquares) {
+  square.onmousemove = e => handleOnMouseMove(e);
+}
+
 for(const card of skillsSection) {
   card.onmousemove = e => handleOnMouseMove(e);
 }
 
-for(square of heroSquares) {
-  square.onmousemove = e => handleOnMouseMove(e);
-}
+contactSection.onmousemove = e => handleOnMouseMove(e);
+
