@@ -12,17 +12,17 @@
     <header>
       <nav>
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Demos</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#demos">Demos</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
   
     <main>
-      <section class="hero-main">
+      <section class="hero-main" id="hero">
         <div class="hero-container">
           <div class="hero-square" id="top-left">
             <h1>AGUSTIN</h1>
@@ -39,9 +39,11 @@
         </div>
       </section>
 
-      <section class="about-container">
+      <section class="about-container" id="about">
         <div class="about">
-          <h1>ABOUT ME</h1>
+          <div class="section-header">
+            <h1>ABOUT ME</h1>
+          </div>
           <div class="underline"></div>
           <div class="about-content">
             <div class="image-col">
@@ -57,8 +59,8 @@
         </div>
       </section>
 
-      <section class="skills-container">
-        <div class="skills-header">
+      <section class="skills-container" id="skills">
+        <div class="section-header">
           <h1>MY SKILLS</h1>
         </div>
         <div class="card-container">
@@ -130,19 +132,19 @@
         </div>
       </section>
 
-      <section class="projects-container">
-        <div class="projects-header">
+      <section class="projects-container" id="projects">
+        <div class="section-header">
           <h1>PROJECTS</h1>
         </div>
         <div class="underline"></div>
         
         <div class="project-outline">
           <div class="project-container">
-            <a href="#">
+            <a href="http://vinyl-vortex.onrender.com/">
               <div class="preview-group">
                 <div class="project-overlay">
                   <h1>Vinyl Vortex</h1>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta possimus debitis eaque, excepturi quasi quo eius itaque quidem saepe enim incidunt eligendi facere quas suscipit accusantium ullam nisi animi perferendis.</p>
+                  <p>Fullstack application for a ficticious record store using Express, MongoDB/Mongoose, Bootstrap and PUG. Browse through different albums, artists and genres and add items to our collection!</p>
                 </div>
                 <img src="/public/images/projects/vinyl-vortex.png" alt="Vinyl Vortex" class="preview-image">
               </div>
@@ -170,8 +172,8 @@
         </div>
       </section>
 
-      <section class="demos-container">
-        <div class="projects-header">
+      <section class="demos-container" id="demos">
+        <div class="section-header">
           <h1>CODE DEMOS</h1>
         </div>
         <div class="underline"></div>
@@ -184,7 +186,7 @@
                   <div class="preview-group">
                     <div class="project-overlay">
                       <h1>SkyCast Weather</h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta possimus debitis eaque, excepturi quasi quo eius itaque quidem saepe enim incidunt eligendi facere quas suscipit accusantium ullam nisi animi perferendis.</p>
+                      <p>Check the weather around the world. This app uses the public WeatherAPI to fetch region-specific weather data, it was built with the intention of solidifying my knowledge in asynchronous programming and working with APIs.</p>
                     </div>
                     <img src="/public/images/projects/weather-api.png" alt="Weather API" class="preview-image">
                   </div>
@@ -192,11 +194,10 @@
                 
                 <div class="lower-group">
                   <div class="badge-section">
-                    <img src="https://img.shields.io/badge/.-JavaScript-F7DF1E?logo=javascript" alt="JavaScript Badge">
-                    <img src="https://img.shields.io/badge/.-HTML5-E34F26?logo=html5" alt="HTML5 Badge">
-                    <img src="https://img.shields.io/badge/Bootstrap-a386cf?logo=bootstrap" alt="Bootstrap Badge">
-                    <img src="https://img.shields.io/badge/Pug-c48d80?logo=pug" alt="Pug Badge">
-                    <img src="https://img.shields.io/badge/Powered%20By-Render-39bd97?logo=render" alt="Render Badge">
+                    <img src="https://img.shields.io/badge/HTML5-888888?logo=html5" alt="HTML5 Badge">
+                    <img src="https://img.shields.io/badge/CSS3-888888?logo=css3" alt="CSS3 Badge">
+                    <img src="https://img.shields.io/badge/JavaScript-888888?logo=javascript" alt="JavaScript Badge">
+                    <img src="https://img.shields.io/badge/Powered%20By-Webpack-8DD6F9?logo=webpack" alt="Webpack Badge">
                   </div>
   
                   <div class="link">
@@ -219,7 +220,7 @@
                   <div class="preview-group">
                     <div class="project-overlay">
                       <h1>Landing Page</h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta possimus debitis eaque, excepturi quasi quo eius itaque quidem saepe enim incidunt eligendi facere quas suscipit accusantium ullam nisi animi perferendis.</p>
+                      <p>A small freelance project for a local restaurant.</p>
                     </div>
                     <img src="/public/images/projects/restaurant-landing.png" alt="Restaurant Landing Page" class="preview-image">
                   </div>
@@ -227,11 +228,10 @@
                 
                 <div class="lower-group">
                   <div class="badge-section">
-                    <img src="https://img.shields.io/badge/Node-Express-339933?logo=nodedotjs" alt="NodeJS Badge">
-                    <img src="https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb" alt="MongoDB Badge">
-                    <img src="https://img.shields.io/badge/Bootstrap-a386cf?logo=bootstrap" alt="Bootstrap Badge">
-                    <img src="https://img.shields.io/badge/Pug-c48d80?logo=pug" alt="Pug Badge">
-                    <img src="https://img.shields.io/badge/Powered%20By-Render-39bd97?logo=render" alt="Render Badge">
+                    <img src="https://img.shields.io/badge/HTML5-888888?logo=html5" alt="HTML5 Badge">
+                    <img src="https://img.shields.io/badge/CSS3-888888?logo=css3" alt="CSS3 Badge">
+                    <img src="https://img.shields.io/badge/JavaScript-888888?logo=javascript" alt="JavaScript Badge">
+                    <img src="https://img.shields.io/badge/Powered%20By-Webpack-8DD6F9?logo=webpack" alt="Webpack Badge">
                   </div>
   
                   <div class="link">
@@ -254,7 +254,7 @@
                   <div class="preview-group">
                     <div class="project-overlay">
                       <h1>Task Manager</h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta possimus debitis eaque, excepturi quasi quo eius itaque quidem saepe enim incidunt eligendi facere quas suscipit accusantium ullam nisi animi perferendis.</p>
+                      <p>A simple app for managing tasks and projects. It uses the 'localStorage' object to make tasks/projects persistent across multiple sessions.</p>
                     </div>
                     <img src="/public/images/projects/task-manager.png" alt="Task Manager" class="preview-image">
                   </div>
@@ -262,11 +262,10 @@
                 
                 <div class="lower-group">
                   <div class="badge-section">
-                    <img src="https://img.shields.io/badge/Node-Express-339933?logo=nodedotjs" alt="NodeJS Badge">
-                    <img src="https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb" alt="MongoDB Badge">
-                    <img src="https://img.shields.io/badge/Bootstrap-a386cf?logo=bootstrap" alt="Bootstrap Badge">
-                    <img src="https://img.shields.io/badge/Pug-c48d80?logo=pug" alt="Pug Badge">
-                    <img src="https://img.shields.io/badge/Powered%20By-Render-39bd97?logo=render" alt="Render Badge">
+                    <img src="https://img.shields.io/badge/HTML5-888888?logo=html5" alt="HTML5 Badge">
+                    <img src="https://img.shields.io/badge/CSS3-888888?logo=css3" alt="CSS3 Badge">
+                    <img src="https://img.shields.io/badge/JavaScript-888888?logo=javascript" alt="JavaScript Badge">
+                    <img src="https://img.shields.io/badge/Powered%20By-Webpack-8DD6F9?logo=webpack" alt="Webpack Badge">
                   </div>
   
                   <div class="link">
@@ -289,7 +288,7 @@
                   <div class="preview-group">
                     <div class="project-overlay">
                       <h1>Battleship</h1>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta possimus debitis eaque, excepturi quasi quo eius itaque quidem saepe enim incidunt eligendi facere quas suscipit accusantium ullam nisi animi perferendis.</p>
+                      <p>A Battleship browser game; my first test-driven project written using Jest for testing game functionality.</p>
                     </div>
                     <img src="/public/images/projects/battleship.png" alt="Battleship" class="preview-image">
                   </div>
@@ -297,11 +296,11 @@
                 
                 <div class="lower-group">
                   <div class="badge-section">
-                    <img src="https://img.shields.io/badge/Node-Express-339933?logo=nodedotjs" alt="NodeJS Badge">
-                    <img src="https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb" alt="MongoDB Badge">
-                    <img src="https://img.shields.io/badge/Bootstrap-a386cf?logo=bootstrap" alt="Bootstrap Badge">
-                    <img src="https://img.shields.io/badge/Pug-c48d80?logo=pug" alt="Pug Badge">
-                    <img src="https://img.shields.io/badge/Powered%20By-Render-39bd97?logo=render" alt="Render Badge">
+                    <img src="https://img.shields.io/badge/HTML5-888888?logo=html5" alt="HTML5 Badge">
+                    <img src="https://img.shields.io/badge/CSS3-888888?logo=css3" alt="CSS3 Badge">
+                    <img src="https://img.shields.io/badge/JavaScript-888888?logo=javascript" alt="JavaScript Badge">
+                    <img src="https://img.shields.io/badge/Jest-C21325?logo=jest" alt="JavaScript Badge">
+                    <img src="https://img.shields.io/badge/Powered%20By-Webpack-8DD6F9?logo=webpack" alt="Webpack Badge">
                   </div>
   
                   <div class="link">
@@ -317,6 +316,14 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <section class="contact-container" id="contact">
+        <div class="section-header">
+          <h1>CONTACT ME</h1>
+        </div>
+        <div class="underline"></div>
+
       </section>
     </main>
   
