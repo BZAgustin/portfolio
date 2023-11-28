@@ -17,32 +17,29 @@ header nav a {
   text-decoration: none;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  padding: 2rem 0;
-}
-main .hero-main {
+.hero-main {
   display: flex;
   align-items: center;
   flex-grow: 1;
   height: 85vh;
   justify-content: center;
 }
-main .hero-container {
+
+.hero-container {
   color: white;
   display: grid;
   font-size: 2.3rem;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
 }
-main #top-left {
+
+#top-left {
   grid-column: 0/1;
   grid-row: 0/1;
   font-size: 3rem;
 }
-main #bottom-right {
+
+#bottom-right {
   position: relative;
   grid-column: 2/2;
   grid-row: 2/2;
@@ -50,10 +47,12 @@ main #bottom-right {
   bottom: 4px;
   text-align: right;
 }
-main .hero-square:hover > .hero-square::after {
+
+.hero-square:hover > .hero-square::after {
   opacity: 1;
 }
-main .hero-square {
+
+.hero-square {
   position: relative;
   background-color: rgba(0, 0, 0, 0.1);
   border: 4px solid rgb(255, 255, 255);
@@ -61,10 +60,12 @@ main .hero-square {
   backdrop-filter: hue-rotate(348deg) blur(5px);
   user-select: none;
 }
-main .hero-square:hover::before {
+
+.hero-square:hover::before {
   opacity: 1;
 }
-main .hero-square::before {
+
+.hero-square::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 225, 255, 0.1), transparent 40%);
   border-radius: inherit;
   position: absolute;
@@ -116,6 +117,9 @@ main .hero-square::before {
   flex-direction: column;
   gap: 8rem;
   flex: 4;
+  font-size: 2.5rem;
+}
+.about-container .text-content p {
   font-size: 2.5rem;
 }
 .about-container #top {
@@ -232,7 +236,7 @@ main .hero-square::before {
 
 .project-outline {
   background: rgb(46, 46, 46);
-  background: linear-gradient(0deg, rgba(46, 46, 46, 0.5) 25%, rgb(241, 241, 241) 100%);
+  background: linear-gradient(0deg, rgba(73, 73, 73, 0.7) 25%, rgb(207, 207, 207) 100%);
   padding: 1px;
   border-radius: 20px;
   filter: drop-shadow(2px 2px 5px black);
@@ -240,7 +244,7 @@ main .hero-square::before {
 
 .project-container {
   background: rgb(4, 4, 4);
-  background: linear-gradient(135deg, rgb(4, 4, 4) 0%, rgb(15, 15, 15) 100%);
+  background: linear-gradient(135deg, rgb(5, 5, 5) 0%, rgb(34, 34, 34) 100%);
   padding: 1.5rem;
   border-radius: 20px;
 }
@@ -276,7 +280,7 @@ main .hero-square::before {
 }
 
 .project:hover .preview-image, .preview-group:hover .preview-image {
-  filter: saturate(60%) brightness(50%) blur(1px);
+  filter: saturate(60%) brightness(75%) blur(1px);
 }
 
 .lower-group {
@@ -296,9 +300,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100px;
   gap: 0.1rem;
   background-color: rgb(255, 166, 0);
   border-radius: 5px;
+  transition: 250ms;
 }
 button img {
   height: 1rem;
@@ -307,6 +313,7 @@ button img {
 
 button:hover {
   cursor: pointer;
+  background-color: rgb(185, 125, 14);
 }
 
 .preview-group {
@@ -342,7 +349,83 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 4rem;
+  align-items: center;
+  padding: 2rem;
+  margin-top: 6rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.contact-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.contact-options-container img {
+  width: 96px;
+  height: 96px;
+  transition: 250ms;
+}
+
+.abstract-container {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.abstract-card {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
+.abstract-card p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.abstract-card:hover::before {
+  opacity: 1;
+}
+
+.abstract-card::before {
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 225, 255, 0.08), transparent 40%);
+  border-radius: inherit;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 500ms;
+  z-index: 2;
+}
+
+#gmail:hover, #linked-in:hover {
+  filter: saturate(65%) drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.4));
+}
+
+#github {
+  border-radius: 100%;
+  padding: 3px;
+  transition: 250ms;
+}
+
+#github:hover {
+  background-color: white;
+  filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.4));
+}
+
+#resume:hover {
+  filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.4));
 }
 
 * {
@@ -372,8 +455,15 @@ a {
   height: 100%;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 2rem 0 0 0;
+}
+
 .section-header {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 
@@ -383,6 +473,19 @@ a {
   width: 40%;
   filter: drop-shadow(0px 0px 5px white);
   align-self: center;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: rgb(9, 9, 9);
+  background: linear-gradient(0deg, rgb(9, 9, 9) 0%, rgb(56, 56, 56) 100%);
 }
 
 @-webkit-keyframes ShiftBackground {
