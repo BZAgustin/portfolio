@@ -132,3 +132,70 @@ button:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+
+@media screen and (max-width: 1200px) {
+  .project-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .project:hover .project-overlay h1, .preview-group:hover .project-overlay h1 {
+    font-size: 3rem;
+  }
+  .project-overlay p {
+    font-size: 0.7rem;
+  }
+
+  .badge-section img{
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .projects-container {
+    padding: 4rem 4rem
+  }
+
+  .project-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .badge-section {
+    display: none;
+  }
+
+  .demos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project:hover .project-overlay h1, .preview-group:hover .project-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    padding: 1rem 1rem
+  }
+
+  .project-overlay {
+    padding: 0.5rem;
+  }
+
+  .demos-container {
+    padding: 1rem 1rem;
+  }
+
+  .project-container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .project-overlay p {
+    font-size: 0.4rem;
+  }
+
+  .project-overlay h1 {
+    font-size: 1rem;
+  }
+}

@@ -95,3 +95,15 @@ footer {
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 960px) {
+  .section-header {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer h2 {
+    font-size: 1rem;
+  }
+}
