@@ -94,8 +94,21 @@
     font-size: 1rem;
   }
 
+  .contact-options-container {
+    margin-bottom: 1rem;
+  }
+
   .contact-container {
-    padding: 1rem;
+    padding: 0rem;
+    margin-top: 2rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .abstract-container {
+    margin-top: 2rem;
   }
 
   .contact-options-container img {
@@ -104,3 +117,30 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .abstract-card p {
+    font-size: 0.7rem;
+  }
+
+  .contact-options-container {
+    gap: 1rem;
+  }
+
+  .contact-options-container img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .abstract-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .abstract-card {
+    padding: 1.2rem;
+  }
+}

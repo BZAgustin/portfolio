@@ -64,6 +64,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .about {
+    padding-bottom: 7rem;
+  }
+  
   .about-content {
     margin-top: 1rem;
     flex-direction: column;
@@ -71,6 +75,8 @@
 
   .text-content {
     gap: 4rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .about-container img {
@@ -81,14 +87,34 @@
 
   .about-content .text-content p {
     font-size: 2rem;
+    text-align: center;
   }
 
   #top, #mid {
     font-size: 2rem;
   }
 
+  #mid {
+    left: 0;
+  }
+
   #top, #bottom {
     right: 0;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    margin-top: 0rem;
+  }
+
+  .about-content .text-content p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #top, #mid {
+    font-size: 1.5rem;
   }
 }
