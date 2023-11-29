@@ -533,6 +533,9 @@ button:hover {
   .demos-grid {
     grid-template-columns: 1fr;
   }
+  .lower-group {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 768px) {
   .project:hover .project-overlay h1, .preview-group:hover .project-overlay h1 {
