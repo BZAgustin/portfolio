@@ -102,6 +102,9 @@ header nav a {
 }
 
 @media screen and (max-width: 768px) {
+  .hero-main {
+    margin-top: 4rem;
+  }
   .hero-square {
     padding: 0.5rem;
   }
@@ -180,12 +183,17 @@ header nav a {
 }
 
 @media screen and (max-width: 1200px) {
+  .about {
+    padding-bottom: 7rem;
+  }
   .about-content {
     margin-top: 1rem;
     flex-direction: column;
   }
   .text-content {
     gap: 4rem;
+    justify-content: center;
+    align-items: center;
   }
   .about-container img {
     width: 10rem;
@@ -194,13 +202,29 @@ header nav a {
   }
   .about-content .text-content p {
     font-size: 2rem;
+    text-align: center;
   }
   #top, #mid {
     font-size: 2rem;
   }
+  #mid {
+    left: 0;
+  }
   #top, #bottom {
     right: 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about {
+    margin-top: 0rem;
+  }
+  .about-content .text-content p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  #top, #mid {
+    font-size: 1.5rem;
   }
 }
 .skills-container {
@@ -210,9 +234,9 @@ header nav a {
   justify-content: center;
 }
 
-.underline {
+.card .underline {
   align-self: center;
-  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .card-container {
@@ -318,9 +342,35 @@ header nav a {
   .card img {
     max-height: 50px;
   }
+  .card .underline {
+    margin-bottom: 1rem;
+  }
+  .card-container {
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
   #back-end {
     font-size: 1.5rem;
     row-gap: 0.5rem;
+  }
+  #back-end h1 {
+    font-size: 1.5rem;
+  }
+  .card-container h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .card img {
+    max-height: 48px;
+  }
+  .card .img-container {
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+  }
+  #back-end {
+    row-gap: 0.1rem;
+    column-gap: 0.1rem;
   }
 }
 .projects-container {
@@ -490,12 +540,14 @@ button:hover {
   }
   .projects-container {
     padding: 1rem 1rem;
+    margin-top: 2rem;
   }
   .project-overlay {
     padding: 0.5rem;
   }
   .demos-container {
     padding: 1rem 1rem;
+    margin-top: 2rem;
   }
   .project-container {
     padding: 1rem;
@@ -597,12 +649,44 @@ button:hover {
   .abstract-card p {
     font-size: 1rem;
   }
+  .contact-options-container {
+    margin-bottom: 1rem;
+  }
   .contact-container {
-    padding: 1rem;
+    padding: 0rem;
+    margin-top: 2rem;
+  }
+  .contact-container h1 {
+    font-size: 2rem;
+  }
+  .abstract-container {
+    margin-top: 2rem;
   }
   .contact-options-container img {
     width: 64px;
     height: 64px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .abstract-card p {
+    font-size: 0.7rem;
+  }
+  .contact-options-container {
+    gap: 1rem;
+  }
+  .contact-options-container img {
+    width: 48px;
+    height: 48px;
+  }
+  .contact-container h1 {
+    font-size: 1.6rem;
+  }
+  .abstract-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .abstract-card {
+    padding: 1.2rem;
   }
 }
 * {
@@ -649,7 +733,7 @@ main {
 .underline {
   background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, white 50%, rgba(255, 255, 255, 0) 90%);
   align-self: center;
-  width: 40%;
+  width: 100%;
   height: 2px;
   filter: drop-shadow(0px 0px 5px white);
 }
@@ -705,14 +789,14 @@ footer {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 960px) {
-  .section-header {
-    font-size: 1.5rem;
-  }
-}
 @media screen and (max-width: 768px) {
   footer h2 {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-header {
+    font-size: 1.8rem;
   }
 }
 
