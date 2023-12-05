@@ -163,12 +163,14 @@ button:hover {
     padding: 4rem 4rem
   }
 
-  .project-overlay h1 {
-    font-size: 1.5rem;
+  .project-container {
+    .link {
+      display: none;
+    }
   }
 
-  .badge-section {
-    display: none;
+  .project-overlay h1 {
+    font-size: 1.5rem;
   }
 
   .demos-grid {
@@ -200,7 +202,12 @@ button:hover {
   }
 
   .project-container {
-    padding: 1rem;
+    padding: 0.8rem;
+
+    .badge-section img {
+      width: auto;
+      height: 18px;
+    }
   }
 }
 
@@ -211,5 +218,12 @@ button:hover {
 
   .project-overlay h1 {
     font-size: 1rem;
+  }
+
+  .project-container {
+    .badge-section img {
+      width: auto;
+      height: 12px;
+    }
   }
 }
