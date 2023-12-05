@@ -111,5 +111,10 @@ footer {
 @media screen and (max-width: 480px) {
   .section-header {
     font-size: 1.8rem;
+
+    h1 {
+      filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.8));
+    }
   }
+  
 }
