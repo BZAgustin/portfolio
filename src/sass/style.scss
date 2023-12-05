@@ -49,9 +49,14 @@ main {
 }
 
 .section-header {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-align: center;
+
+  h1 {
+    filter: drop-shadow(6px 6px 0.5px black);
+  }
 }
+
 
 .underline {
   background-image: linear-gradient($horizontal, $transparent 10%, white 50%, $transparent 90%);
