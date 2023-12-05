@@ -21,6 +21,12 @@
   grid-column: 0 / 1;
   grid-row: 0 / 1;
   font-size: 2.5vw;
+
+  .square-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 #bottom-right {
@@ -54,6 +60,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
 }
 
 #bottom-right .square-text {
