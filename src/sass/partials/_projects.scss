@@ -4,6 +4,10 @@
   @include flex-column-center;
   padding: 3rem 12rem;
   margin-top: 4rem;
+
+  .section-header {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .demos-container {
@@ -54,6 +58,10 @@
   h1 {
     font-size: 2.5rem;
     transition: 250ms ease-in-out;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
   }
 }
 

@@ -8,7 +8,7 @@
 @import 'partials/projects';
 @import 'partials/contact';
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap');
 
 * {
   padding: 0;
@@ -32,9 +32,9 @@ a {
   @include gradient-background($horizontal, $background-gradient);
   background-size: 400%;
 
-  -webkit-animation: ShiftBackground 45s ease-in-out infinite;
-  -moz-animation: ShiftBackground 45s ease-in-out infinite;
-  animation: ShiftBackground 45s ease-in-out infinite;
+  -webkit-animation: ShiftBackground 35s ease-in-out infinite;
+  -moz-animation: ShiftBackground 35s ease-in-out infinite;
+  animation: ShiftBackground 35s ease-in-out infinite;
 
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ main {
   text-align: center;
 
   h1 {
-    filter: drop-shadow(6px 6px 0.5px black);
+    filter: drop-shadow(5px 5px 0.5px rgba(0, 0, 0, 0.8));
   }
 }
 
