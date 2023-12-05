@@ -109,7 +109,7 @@ header nav li:hover .underline {
 }
 
 .hero-square::before {
-  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 225, 255, 0.1), transparent 40%);
+  background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 179, 202, 0.08), transparent 40%);
   border-radius: inherit;
   position: absolute;
   content: "";
@@ -553,11 +553,11 @@ button:hover {
   .projects-container {
     padding: 4rem 4rem;
   }
+  .project-container .link {
+    display: none;
+  }
   .project-overlay h1 {
     font-size: 1.5rem;
-  }
-  .badge-section {
-    display: none;
   }
   .demos-grid {
     grid-template-columns: 1fr;
@@ -582,7 +582,11 @@ button:hover {
     margin-top: 2rem;
   }
   .project-container {
-    padding: 1rem;
+    padding: 0.8rem;
+  }
+  .project-container .badge-section img {
+    width: auto;
+    height: 18px;
   }
 }
 @media screen and (max-width: 548px) {
@@ -591,6 +595,10 @@ button:hover {
   }
   .project-overlay h1 {
     font-size: 1rem;
+  }
+  .project-container .badge-section img {
+    width: auto;
+    height: 12px;
   }
 }
 .contact-container {
@@ -775,7 +783,7 @@ a {
 
 .wrapper {
   background: rgb(2, 0, 6);
-  background-image: linear-gradient(90deg, rgb(10, 0, 31), rgb(14, 33, 94), rgb(46, 24, 105), rgb(75, 9, 77), rgb(97, 20, 45), rgb(44, 7, 26));
+  background-image: linear-gradient(90deg, rgb(10, 0, 31), rgb(14, 33, 94), rgb(19, 13, 104), rgb(75, 9, 77), rgb(97, 20, 45), rgb(44, 7, 26));
   background-size: 400%;
   -webkit-animation: ShiftBackground 35s ease-in-out infinite;
   -moz-animation: ShiftBackground 35s ease-in-out infinite;
@@ -867,6 +875,9 @@ footer {
 @media screen and (max-width: 480px) {
   .section-header {
     font-size: 1.8rem;
+  }
+  .section-header h1 {
+    filter: drop-shadow(3px 3px 0.5px rgba(0, 0, 0, 0.8));
   }
 }
 
