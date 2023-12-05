@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway&display=swap");
 header {
   padding: 1.5rem;
 }
@@ -60,6 +60,11 @@ header nav li:hover .underline {
   grid-row: 0/1;
   font-size: 2.5vw;
 }
+#top-left .square-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 #bottom-right {
   position: relative;
@@ -92,6 +97,7 @@ header nav li:hover .underline {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.5));
 }
 
 #bottom-right .square-text {
@@ -173,6 +179,7 @@ header nav li:hover .underline {
 }
 
 .text-content {
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   gap: 8rem;
@@ -275,6 +282,7 @@ header nav li:hover .underline {
 }
 
 .card {
+  font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,6 +404,9 @@ header nav li:hover .underline {
   padding: 3rem 12rem;
   margin-top: 4rem;
 }
+.projects-container .section-header {
+  margin-bottom: 0.5rem;
+}
 
 .demos-container {
   display: flex;
@@ -448,6 +459,9 @@ header nav li:hover .underline {
 .project-overlay h1 {
   font-size: 2.5rem;
   transition: 250ms ease-in-out;
+}
+.project-overlay p {
+  font-family: "Raleway", sans-serif;
 }
 
 .project:hover .project-overlay h1, .preview-group:hover .project-overlay h1 {
@@ -614,6 +628,7 @@ button:hover {
 }
 
 .abstract-card {
+  font-family: "Raleway", sans-serif;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -760,11 +775,11 @@ a {
 
 .wrapper {
   background: rgb(2, 0, 6);
-  background-image: linear-gradient(90deg, rgba(2, 0, 6, 0.6), rgba(24, 34, 66, 0.6), rgba(57, 40, 104, 0.6), rgba(61, 9, 77, 0.6), rgba(82, 25, 43, 0.6), rgba(7, 1, 1, 0.6));
+  background-image: linear-gradient(90deg, rgb(10, 0, 31), rgb(14, 33, 94), rgb(46, 24, 105), rgb(75, 9, 77), rgb(97, 20, 45), rgb(44, 7, 26));
   background-size: 400%;
-  -webkit-animation: ShiftBackground 45s ease-in-out infinite;
-  -moz-animation: ShiftBackground 45s ease-in-out infinite;
-  animation: ShiftBackground 45s ease-in-out infinite;
+  -webkit-animation: ShiftBackground 35s ease-in-out infinite;
+  -moz-animation: ShiftBackground 35s ease-in-out infinite;
+  animation: ShiftBackground 35s ease-in-out infinite;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -778,8 +793,11 @@ main {
 }
 
 .section-header {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   text-align: center;
+}
+.section-header h1 {
+  filter: drop-shadow(5px 5px 0.5px rgba(0, 0, 0, 0.8));
 }
 
 .underline {
